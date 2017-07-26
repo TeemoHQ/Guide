@@ -1,0 +1,69 @@
+﻿<Window x:Class="Introduce.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Introduce"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Width="1500"
+        Height="900"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="CanMinimize">
+    <Grid x:Name="Grid">
+        <UniformGrid Columns="4" Rows="1" Margin="200" Name="UniformGrid">
+            <Button Margin="50" Click="ShowTop" Content="1" x:Name="Button"></Button>
+            <Button Margin="50" Click="ShowLeft" Content="2"></Button>
+            <Button Margin="50" Click="ShowRight" Content="3"></Button>
+            <Button Margin="50" Click="ShowBottom" Content="4"></Button>
+        </UniformGrid>
+
+        <Canvas x:Name="Canvas1">
+            <Path  StrokeThickness="4"  x:Name="Pt" Fill="Black" Opacity="0.5" MouseLeftButtonDown="Hidden">
+                <Path.Data>
+                    <GeometryGroup FillRule="EvenOdd">
+                        <RectangleGeometry x:Name="Rg1" />
+                        <RectangleGeometry x:Name="Rg2" />
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+            <TextBlock  x:Name="Tb" FontSize="20" TextWrapping="Wrap" Text="请根据所需的业务点击按钮" >
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard >
+                                <DoubleAnimation BeginTime="00:00:00"
+                                                 From="0.1" To="1"
+                                                 Duration="00:00:0.5"
+                                                 AutoReverse="True"
+                                                 RepeatBehavior="Forever"
+                                                 Storyboard.TargetName="Tb" 
+                                                 Storyboard.TargetProperty="Opacity" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+
+            <Path x:Name="Pg" Fill="DeepPink" Data="">
+                <Path.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard >
+                                <DoubleAnimation BeginTime="00:00:00"
+                                                 From="0.1" To="1"
+                                                 Duration="00:00:0.5"
+                                                 AutoReverse="True"
+                                                 RepeatBehavior="Forever"
+                                                 Storyboard.TargetName="Pg" 
+                                                 Storyboard.TargetProperty="Opacity" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Path.Triggers>
+            </Path>
+
+        </Canvas>
+    </Grid>
+</Window>

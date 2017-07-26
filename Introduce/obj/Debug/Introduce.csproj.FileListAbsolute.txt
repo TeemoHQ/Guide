@@ -1,0 +1,14 @@
+F:\C#Practice\Introduce\Introduce\bin\Debug\Introduce.exe.config
+F:\C#Practice\Introduce\Introduce\bin\Debug\Introduce.exe
+F:\C#Practice\Introduce\Introduce\bin\Debug\Introduce.pdb
+F:\C#Practice\Introduce\Introduce\obj\Debug\MainWindow.g.cs
+F:\C#Practice\Introduce\Introduce\obj\Debug\App.g.cs
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce_MarkupCompile.cache
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce_MarkupCompile.lref
+F:\C#Practice\Introduce\Introduce\obj\Debug\MainWindow.baml
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce.g.resources
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce.Properties.Resources.resources
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce.csproj.GenerateResource.Cache
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce.exe
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce.pdb
+F:\C#Practice\Introduce\Introduce\obj\Debug\Introduce.csprojResolveAssemblyReference.cache
